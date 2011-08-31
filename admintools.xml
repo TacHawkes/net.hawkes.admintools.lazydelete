@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+    <import>
+	    
+	    <categories>
+			
+			<category name="user.inactiveUsers.lazy">
+				<function>user.inactiveUsers</function>
+				<parent>user.inactiveUsers</parent>
+			</category>
+			
+	    </categories>
+	    
+	    <options>
+	    	
+			<option name="user.inactiveUsers.lazy.postThreshold">
+				<categoryname>user.inactiveUsers.lazy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>0</defaultvalue>								
+				<showorder>1</showorder>
+			</option>
+			
+			<option name="user.inactiveUsers.lazy.time">
+				<categoryname>user.inactiveUsers.lazy</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>14</defaultvalue>								
+				<showorder>2</showorder>
+			</option>
+			
+			<option name="user.inactiveUsers.lazy.postSinceRegistration">
+				<categoryname>user.inactiveUsers.lazy</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>								
+				<showorder>3</showorder>
+			</option>
+			
+			<option name="user.inactiveUsers.lazy.action">
+				<categoryname>user.inactiveUsers.lazy</categoryname>
+				<optiontype>radiobuttons</optiontype>
+				<defaultvalue>none</defaultvalue>
+				<selectoptions><![CDATA[none:wcf.acp.admintools.function.user.inactiveUsers.none
+warn:wcf.acp.admintools.function.user.inactiveUsers.warn
+delete:wcf.acp.admintools.function.user.inactiveUsers.delete
+warnanddelete:wcf.acp.admintools.function.user.inactiveUsers.warnanddelete]]></selectoptions>								
+				<showorder>4</showorder>
+			</option>
+		</options>
+    </import>
+</data>

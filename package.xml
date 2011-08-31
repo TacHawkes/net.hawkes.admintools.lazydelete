@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="net.hawkes.admintools.lazydelete" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+    <packageinformation>
+        <packagename>AdminTools 2 Delete Lazy Users</packagename>
+        <packagename language="de">AdminTools 2 Schreibfaule Benutzer löschen</packagename>
+        <packagename language="de-informal">AdminTools 2 Schreibfaule Benutzer löschen</packagename>
+        <packagedescription>This plugin extends inactive users delete function by an option to delete users who are alzy at posting.</packagedescription>        
+        <packagedescription language="de"><![CDATA[Dieses Paket erweitert die Funktion Inaktive Benutzer löschen um eine Funktion mit der schreibfaule Benutzer gelöscht werden können.]]></packagedescription>
+        <packagedescription language="de-informal"><![CDATA[Dieses Paket erweitert die Funktion Inaktive Benutzer löschen um eine Funktion mit der schreibfaule Benutzer gelöscht werden können.]]></packagedescription>
+        <version>1.0.3</version>
+        <date>2011-06-18</date>
+        <standalone>0</standalone>
+        <isUnique>0</isUnique> 
+        <plugin>com.woltlab.wbb</plugin>              
+        <packageurl>http://www.wbb3addons.de</packageurl>
+    </packageinformation>
+
+    <authorinformation>
+        <author>Oliver Kliebisch</author>
+        <authorurl>http://www.oliver-kliebisch.de</authorurl>
+    </authorinformation>
+
+    <requiredpackages>
+        <requiredPackage minversion="1.1.0">com.woltlab.wcf</requiredPackage>
+        <requiredPackage>com.woltlab.wbb</requiredPackage>        
+        <requiredPackage>net.hawkes.admintools.wcf.functions</requiredPackage>                
+    </requiredpackages>
+
+    <instructions type="install">
+        <files>files.tar</files>                
+        <admintoolsfunction>admintools.xml</admintoolsfunction>     
+        <eventlistener>eventlistener.xml</eventlistener>   
+        <languages languagecode="de">de.xml</languages>               
+        <languages languagecode="de-informal">de-informal.xml</languages>
+        <languages languagecode="en">en.xml</languages>        
+    </instructions>
+    
+    <instructions type="update" fromversion="1.0.2">
+        <empty></empty>
+    </instructions>    
+
+</package>

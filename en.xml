@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="en">
+<category name="wbb.acp.admintools">				
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.mailsubject"><![CDATA[{$pagetitle}: Your account is scheduled for deletion]]></item>
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.mailmessage"><![CDATA[Hello {$username},
+
+You have posted less than {$lazytreshold} posts on our website ({$pagetitle}) within the last {$lastvisit} days.
+If youare no longer interested in participating in our community, ignore this mail and your account will be deleted in  {$warntime} days.
+
+
+------------------------------------------------------------
+This mail has been generated automatically.]]></item>		
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.mailwarned"><![CDATA[{$count} Lazy users warned:]]></item>
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.adminmail"><![CDATA[{$count} Lazy users deleted:]]></item>
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.success"><![CDATA[<p>{$countDeleted} users have been deleted due to lazy posting behaviour.</p>
+																					<p>{$countWarned} have been informed about their lazy posting behaviour and consequences.</p>]]></item>
+	</category>
+	<category name="wcf.acp.admintools.option">
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.lazy"><![CDATA[Settings for lazy users]]></item>
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.lazy.description"><![CDATA[]]></item>		
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.time"><![CDATA[Lazy with]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.time.description"><![CDATA[Enter the number of days after which users with lesser posts than the above configured threshold will be deleted.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postSinceRegistration"><![CDATA[Calculate lazyness by registration date]]></item>		
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postSinceRegistration.description"><![CDATA[Activate this option if you want to calculate the post lazyness by registration date instead of the last activity time.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postThreshold"><![CDATA[Lazy with]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postThreshold.description"><![CDATA[Enter the post treshold. Users with less posts than the entered number will be deleted after the configured time below.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.action"><![CDATA[Action]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.action.description"><![CDATA[Choose what to do with the lazy users.]]></item>
+	</category>
+</language>

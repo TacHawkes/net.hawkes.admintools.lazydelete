@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+<category name="wbb.acp.admintools">				
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.mailsubject"><![CDATA[{$pagetitle}: Ihr Account wird bald gelöscht]]></item>
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.mailmessage"><![CDATA[Hallo {$username},
+
+Sie haben in unserem Forum ({$pagetitle}) innerhalb von {$lastvisit} Tagen weniger als {$lazythreshold} Beiträge verfasst.
+Wenn Sie kein Interesse mehr daran haben unserer Community beizuwohnen, dann ignorieren Sie diese Mail und die Löschung tritt in {$warntime} Tagen in Kraft.
+
+
+------------------------------------------------------------
+Diese E-Mail wurde automatisch versendet.]]></item>		
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.mailwarned"><![CDATA[{$count}  Verwarnungen aufgrund Schreibfaulheit:]]></item>
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.adminmail"><![CDATA[{$count} Löschungen aufgrund Schreibfaulheit:]]></item>
+		<item name="wbb.acp.admintools.function.user.inactiveUsers.lazy.success"><![CDATA[<p>{$countDeleted} Benutzer wurden aufgrund von Schreibfaulheit gelöscht.</p>
+																					<p>{$countWarned} Benutzer wurden über ihre Schreibfaulheit und eventuelle Konsequenzen informiert.</p>]]></item>
+	</category>
+	<category name="wcf.acp.admintools.option">
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.lazy"><![CDATA[Einstellungen für schreibfaule Benutzer]]></item>
+		<item name="wcf.acp.admintools.option.category.user.inactiveUsers.lazy.description"><![CDATA[]]></item>		
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.time"><![CDATA[Schreibfaul ab]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.time.description"><![CDATA[Tragen Sie die Anzahl der Tage ein, ab der Benutzer, die weniger als die unten eingestellte Anzahl an Beiträgen geschrieben haben, gelöscht werden.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postSinceRegistration"><![CDATA[Schreibfaulheit ab dem Registrierungszeitpunkt berechnen]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postSinceRegistration.description"><![CDATA[Ist diese Option aktiviert wird die Schreibfaulheit nicht nach der letzten Aktivität, sondern ab der Registrierung berechnet.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postThreshold"><![CDATA[Schreibfaul mit]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.postThreshold.description"><![CDATA[Hier geben Sie die Anzahl der Beiträge an, die ein Benutzer mindestens geschrieben haben muss, um nicht nach der in &raquo;Schreibfaul ab&laquo; angegebenen Zeit gelöscht zu werden. Ist hier beispielsweise eine &raquo;1&laquo; eingetragen, so werden alle Benutzer mit 0 Beiträgen gelöscht.]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.action"><![CDATA[Aktion]]></item>
+		<item name="wcf.acp.admintools.option.user.inactiveUsers.lazy.action.description"><![CDATA[Geben sie an wie mit schreibfaulen Benutzern verfahren werden soll.]]></item>
+	</category>
+</language>
